@@ -53,16 +53,6 @@ function addKorisnikDugme() {
     console.log(ime, prezime);
     addKorisnik(ime, prezime);
 }
-// function addAnaliza(naziv, donjaRef, gornjaRef, merenaVrednost, cena) {
-//     let analiza = new Analiza(naziv, donjaRef, gornjaRef, merenaVrednost, cena);
-//     let noviId = 1;
-//     if (listaKorisnika != 0) {
-//         noviId = listaAnaliza[listaAnaliza.length - 1].id + 1;
-//     }
-//     listaAnaliza.id = noviId;
-//     console.log(analiza);
-//     listaAnaliza.push(analiza);
-// }
 function addAnalizaDugme() {
     let id = document.getElementById("idKorisnika").value
     let naziv = document.getElementById("naziv").value
