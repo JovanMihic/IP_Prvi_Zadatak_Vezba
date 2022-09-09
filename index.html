@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+    <h1>Laboratorija</h1>
+    <h3>Korisnici</h3>
+    <table id="tabelaKorisnik" border="1">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>ime</th>
+                <th>prezime</th>
+            </tr>
+        </thead>
+        <tbody id="teloKorisnik">
+        </tbody>
+    </table>
+
+
+
+    <div>
+        <h3>Dodaj korisnika</h3>
+        <input type="text" placeholder="ime" id="imeKorisnik">
+        <input type="text" placeholder="prezime" id="prezimeKorisnik">
+        <input type="button" onclick="addKorisnikDugme();" value="Dodaj korisnika">
+    </div>
+    <hr>
+    <h3>Analize</h3>
+    <div>
+        <h3>Dodaj Analizu</h3>
+
+        <input type="number" placeholder="id korisnika" id="idKorisnika">
+        <br>
+        <input type="text" placeholder="naziv analize" id="naziv">
+        <br>
+        <input type="number" placeholder="donja referentna vrednost" id="donjaRef">
+        <br>
+        <input type="number" placeholder="gornja referentna vrednost" id="gornjaRef">
+        <br>
+        <input type="number" placeholder="izmerena vrednost" id="merenaVrednost">
+        <br>
+        <input type="number" placeholder="cena" id="cena">
+        <br>
+        <input type="button" onclick="addAnalizaDugme();" value="Dodaj korisnika">
+
+    </div>
+    <hr>
+    <h3>Spisak korisnika sa ukupnim cenama analiza</h3>
+    <select id="selectAnalize" onchange="prikazAnaliza();"></select>
+    <p id="pUkupnaCena">Ukupna cena analiza: </p>
+    <table id="tabelaAnaliza" border="1">
+        <thead>
+            <tr>
+                <th>naziv</th>
+                <th>donja ref.</th>
+                <th>gornja ref.</th>
+                <th>izmerena vrednost</th>
+                <th>cena</th>
+            </tr>
+        </thead>
+        <tbody id="teloAnaliza">
+        </tbody>
+    </table>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
